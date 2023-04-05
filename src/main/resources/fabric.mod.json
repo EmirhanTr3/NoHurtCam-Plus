@@ -5,7 +5,7 @@
   "name": "NoHurtCam",
   "description": "Removes the damage Screenshake",
   "authors": [
-    "UltraBlackLinux"
+    "Blake_JH"
   ],
   "contact": {
     "homepage": "https://github.com/UltraBlackLinux/noHurtCam",
@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.ultrablacklinux.nohurtcam.NoHurtCam"
+      "com.blake_jh.nohurtcam.NoHurtCam"
     ]
   },
   "mixins": [
