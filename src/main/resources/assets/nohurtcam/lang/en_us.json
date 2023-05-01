@@ -1,4 +1,4 @@
 {
-  "key.noHurtCam.toggle": "Disable Hurt Cam",
-  "category.noHurtCam": "NoHurtCam"
+  "key.noHurtCam+.toggle": "Disable Hurt Cam",
+  "category.noHurtCam+": "NoHurtCam+"
 }

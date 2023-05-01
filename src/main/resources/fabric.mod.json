@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "nohurtcam",
+  "id": "nohurtcamplus",
   "version": "${version}",
-  "name": "NoHurtCam",
+  "name": "NoHurtCam+",
   "description": "Removes the damage Screenshake",
   "authors": [
     "Blake_JH"
   ],
   "contact": {
-    "homepage": "https://github.com/UltraBlackLinux/noHurtCam",
-    "issues": "https://github.com/UltraBlackLinux/noHurtCam/issues"
+    "homepage": "https://github.com/BlakeJH/noHurtCam",
+    "issues": "https://github.com/BlakeJH/noHurtCam/issues"
   },
   "license": "MIT",
   "icon": "assets/nohurtcam/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.blake_jh.nohurtcam.NoHurtCam"
+      "com.blake_jh.nohurtcamplus.NoHurtCamPlus"
     ]
   },
   "mixins": [
-    "noHurtCam.mixins.json"
+    "noHurtCamPlus.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.14.19",
     "fabric": "*",
     "minecraft": "*"
   }

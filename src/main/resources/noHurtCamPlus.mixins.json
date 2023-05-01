@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.blake_jh.nohurtcam.mixin",
+  "package": "com.blake_jh.nohurtcamplus.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "GameRendererMixin"

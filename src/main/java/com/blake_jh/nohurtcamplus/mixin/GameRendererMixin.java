@@ -1,6 +1,6 @@
-package com.blake_jh.nohurtcam.mixin;
+package com.blake_jh.nohurtcamplus.mixin;
 
-import com.blake_jh.nohurtcam.NoHurtCam;
+import com.blake_jh.nohurtcamplus.NoHurtCamPlus;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class GameRendererMixin {
     @Inject(at = @At("HEAD"), method = "tiltViewWhenHurt(Lnet/minecraft/client/util/math/MatrixStack;F)V", cancellable = true)
     public void bobViewWhenHurt(MatrixStack matrixStack_1, float float_1, CallbackInfo ci) {
-        if (NoHurtCam.toggledOn) ci.cancel();
+        if (NoHurtCamPlus.toggledOn) ci.cancel();
     }
 }
