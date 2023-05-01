@@ -2,7 +2,7 @@
 
 
 # NOTICE
-**This mod is a fork of noHurtCam by UltraBlackLinux.**
+**This mod is a fork of [noHurtCam](https://github.com/UltraBlackLinux/noHurtCam) by UltraBlackLinux.**
 
 # NoHurtCam
 
