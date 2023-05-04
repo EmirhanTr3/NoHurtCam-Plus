@@ -11,7 +11,7 @@
     "homepage": "https://github.com/BlakeJH/noHurtCam",
     "issues": "https://github.com/BlakeJH/noHurtCam/issues"
   },
-  "license": "MIT",
+  "license": "GNU Affero General Public License v3.0",
   "icon": "assets/nohurtcam/icon.png",
   "environment": "*",
   "entrypoints": {
