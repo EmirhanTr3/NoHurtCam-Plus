@@ -11,9 +11,9 @@
     "homepage": "https://github.com/BlakeJH/noHurtCam",
     "issues": "https://github.com/BlakeJH/noHurtCam/issues"
   },
-  "license": "MIT",
+  "license": "GNU Affero General Public License v3.0",
   "icon": "assets/nohurtcam/icon.png",
-  "environment": "*",
+  "environment": "CLIENT",
   "entrypoints": {
     "main": [
       "com.blake_jh.nohurtcamplus.NoHurtCamPlus"
@@ -23,8 +23,7 @@
     "noHurtCamPlus.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.19",
-    "fabric": "*",
-    "minecraft": "*"
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20"
   }
 }
