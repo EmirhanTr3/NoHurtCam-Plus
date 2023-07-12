@@ -21,11 +21,11 @@ public class NoHurtCamPlus implements ModInitializer {
             if (k.wasPressed()) {
                 if (toggledOn) {
                     toggledOn = false;
-                    client.player.sendMessage(Text.of("§9[NoHurtCam+] §rEnabled Hurtcam"), false);
+                    client.inGameHud.setOverlayMessage(Text.of("Enabled Hurtcam"), false);
                 }
                 else {
                     toggledOn = true;
-                    client.player.sendMessage(Text.of("§9[NoHurtCam+] §rDisabled Hurtcam"), false);
+                    client.inGameHud.setOverlayMessage(Text.of("Disabled Hurtcam"), false);
                 }
             }
         });
