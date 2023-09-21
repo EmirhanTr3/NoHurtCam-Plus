@@ -9,23 +9,23 @@ import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
 public class NoHurtCamPlus implements ModInitializer {
-    public static boolean toggledOn = true;
-    MinecraftClient client = MinecraftClient.getInstance();
+    public static boolean hurtCam = true;
+    MinecraftClient mc = MinecraftClient.getInstance();
     @Override
     public void onInitialize() {
         KeyBinding k = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.noHurtCam+.toggle",
                 GLFW.GLFW_KEY_F8,
                 "category.noHurtCam+"));
 
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+        ClientTickEvents.END_CLIENT_TICK.register(mc -> {
             if (k.wasPressed()) {
-                if (toggledOn) {
-                    toggledOn = false;
-                    client.inGameHud.setOverlayMessage(Text.of("Enabled Hurtcam"), false);
+                if (hurtCam) {
+                    hurtCam = false;
+                    mc.inGameHud.setOverlayMessage(Text.of("Enabled Hurtcam"), false);
                 }
                 else {
-                    toggledOn = true;
-                    client.inGameHud.setOverlayMessage(Text.of("Disabled Hurtcam"), false);
+                    hurtCam = true;
+                    mc.inGameHud.setOverlayMessage(Text.of("Disabled Hurtcam"), false);
                 }
             }
         });
