@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class GameRendererMixin {
     @Inject(at = @At("HEAD"), method = "tiltViewWhenHurt(Lnet/minecraft/client/util/math/MatrixStack;F)V", cancellable = true)
     public void bobViewWhenHurt(MatrixStack matrixStack_1, float float_1, CallbackInfo ci) {
-        if (NoHurtCamPlus.hurtCam) ci.cancel();
+        if (!NoHurtCamPlus.hurtCam) ci.cancel();
     }
 }

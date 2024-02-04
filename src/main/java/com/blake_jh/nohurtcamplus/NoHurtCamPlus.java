@@ -9,7 +9,7 @@ import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
 public class NoHurtCamPlus implements ModInitializer {
-    public static boolean hurtCam = true;
+    public static boolean hurtCam = false;
     MinecraftClient mc = MinecraftClient.getInstance();
     @Override
     public void onInitialize() {
@@ -19,12 +19,12 @@ public class NoHurtCamPlus implements ModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(mc -> {
             if (k.wasPressed()) {
-                if (hurtCam) {
-                    hurtCam = false;
+                if (!hurtCam) {
+                    hurtCam = true;
                     mc.inGameHud.setOverlayMessage(Text.of("Enabled Hurtcam"), false);
                 }
                 else {
-                    hurtCam = true;
+                    hurtCam = false;
                     mc.inGameHud.setOverlayMessage(Text.of("Disabled Hurtcam"), false);
                 }
             }
